@@ -9,19 +9,21 @@
     }
 });
 
-define(['durandal/system', 'durandal/app', 'durandal/viewLocator'],  function (system, app, viewLocator) {
-    app.title = 'Universidad Rey Juan Carlos';
+define(['durandal/system', 'durandal/app', 'durandal/viewLocator'],
+    function (system, app, viewLocator) {
+        app.title = 'Universidad Rey Juan Carlos';
 
-    app.configurePlugins({
-        router:true,
-        dialog: true,
-        widget: {
-            kinds: ['expander']
-        }
-    });
+        app.configurePlugins({
+            router:true,
+            dialog: true,
+            widget: {
+                kinds: ['expander']
+            }
+        });
 
-    app.start().then(function () {
-        viewLocator.useConvention();
-        app.setRoot('shell');
-    });
-});
+        app.start().then(function () {
+            viewLocator.useConvention();
+            app.setRoot('shell');
+        });
+    }
+);
