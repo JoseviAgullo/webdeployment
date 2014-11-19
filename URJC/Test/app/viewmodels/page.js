@@ -1,5 +1,5 @@
 ﻿define(['knockout'], function (ko) {
-    var number = ko.observable(10);
+    var number = ko.observable(30);
 
     return {
         number: number,
