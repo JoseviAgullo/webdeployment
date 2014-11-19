@@ -1,4 +1,5 @@
 ﻿define(['plugins/router'], function (router) {
+    debugger
     return {
         router: router,
         activate: function () {
